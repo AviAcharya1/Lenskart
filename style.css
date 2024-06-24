@@ -1,0 +1,464 @@
+body{
+    font-family: futurastd-book,helvetica neue,Helvetica,Arial,sans-serif;
+    overflow-x:hidden;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+div.states{
+    display:flex;
+    width:80%;
+    height:100px;
+    position: relative;
+    top:-24px;
+}
+div.states div{
+    width:100px;
+    text-align: center;
+}
+div.states a{
+    color:#6E5A64;
+}
+div.states div:hover span{
+    text-decoration: underline;
+}
+div.fixedHeader{
+    position: fixed;
+    width:100%;
+    z-index:40;
+    background: white;
+    margin:-8px;
+}
+div.delacrossind{
+    height:70px;
+    margin:-14px;
+    padding:0 20px;
+    width:102%;
+    background: #FDE3BC;
+    font-size:1.2vw;
+}
+div.delacrossind div.container{
+    margin:-20px auto auto;
+    height:70px;
+    width:60%;
+}
+div.delacrossind div *{
+    display: inline-block;
+}
+a.knowmore{
+    padding:18px;
+    color:white;
+    font-size: larger;
+    background:#00BAC6;
+    border-radius:7px;
+}
+/* Top Links */
+div.topLinks{
+    width:94%;
+    margin:auto;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    font-size: small;
+}
+div.topLinks a{
+    display: inline;
+    font-weight:100;
+    color:#6E5A64;
+}
+div.topLinks a:hover{
+    text-decoration: underline;
+}
+div.support{
+    text-align: right;
+}
+div.support p{
+    margin-top:0;
+}
+/* Top Links */
+/* Brand Level */
+div.brandLevel{
+    width: 94%;
+    margin:auto;
+    height:60px;
+    display:grid;
+    grid-template-columns: 30% 30% 40%;
+}
+div.search input{
+    margin-left:30px;
+    margin-top:16px;
+    width:28vw;
+}
+div.navLinks{
+    padding-left:70px;
+}
+div.navLinks a{
+    color:#6E5A64;
+    margin-left:5px;
+    margin-right:5px;
+    vertical-align: middle;
+    font-size: 1.2vw;
+}
+div.search img{
+    position: relative;
+    left:29vw;
+    bottom:29px;
+}
+div.navLinks a{
+    display:inline;
+    position:relative;
+    top:24%;
+}
+div.logo img{
+    width:22vw;
+    height:4vw;
+}
+/* Brand Level */
+/* Categories */
+div.categories{
+    margin:-10px;
+    padding:0 20px;
+    position: relative;
+    z-index: 5;
+    font-size: 1.2vw;
+    width:102%;
+    background: #DCDBD4;
+}
+div.categories li{
+    display: inline-block;
+    margin-right:-5px;
+}
+div.categories li.categ,div.categories li.active{
+    padding:13px;
+}
+div.categories li.categ:hover{
+    cursor: pointer;
+    background: linear-gradient(90deg, rgba(61,179,168,1) 0%, rgba(220,187,61,1) 100%);
+    color:white;
+}
+div.categories li.active{
+    background: linear-gradient(90deg, rgba(61,179,168,1) 0%, rgba(220,187,61,1) 100%);
+    color:white;
+}
+div.categories img{
+    display: inline-block;
+    vertical-align: bottom;
+    width:4vw;
+}
+/* Categories */
+/* Box Dropdown */
+div.boxDropdown{
+    width:88%;
+    position: absolute;
+    left:100px;
+    top:73%;
+    display:none;
+    z-index:10;
+    background:white;
+    font-size:14px;
+    font-weight: 300;
+}
+div.boxDropdown > div{
+    display:flex;
+    background:white;
+    position: absolute;
+    z-index:10;
+    box-shadow: 0 0 10px #6E5A64;
+    left:0;
+    top:0;
+    flex-direction: row;
+}
+div.boxDropdown div.contactLenses div{
+    width:230px;
+    height:400px;
+}
+div.storeLocator{
+    width:100% !important;
+}
+div.storeLocator div:nth-child(2){
+    width:40% !important;
+}
+div.boxDropdown div.eyetest div,div.boxDropdown div.tryathome div{
+    width:550px;
+    height:330px;
+}
+div.pic img{
+    margin:30px;
+}
+div.boxDropdown div.eyeglasses div{
+    width:175px;
+    height:330px;
+}
+div.boxDropdown div.eyeglasses div.category,div.gender{
+    width:200px !important;
+}
+div.boxDropdown div.eyeglasses div.category ul,div.gender ul{
+    margin-left:-40px;
+}
+div.boxDropdown div.eyeglasses div.category li,div.gender li{
+    padding:14px;
+}
+div.boxDropdown div.eyeglasses div.category li img,div.gender li img{
+    margin-left:40px;
+    width:40px;
+}
+div.boxDropdown div.eyeglasses div.category li:hover,div.gender li:hover{
+    background: #DCDBD4;
+    cursor: pointer;
+}
+div.boxDropdown > div.eyeglasses > div > h3,h4{
+    text-align: center;
+}
+div.boxDropdown div.eyeglasses div.gender,div.category{
+    border-right:1px solid #ededed;
+}
+div.boxDropdown ul.list li{
+    padding:10px;
+    font-size: x-small;
+}
+div.boxDropdown ul.list li:hover{
+    font-weight: bolder;
+    font-size: small;
+    cursor: pointer;
+}
+div.boxDropdown ul.list li:hover::after{
+    content: ' >';
+}
+div.solutions img{
+    width:47%;
+    display: inline-block;
+}
+a.bookapt{
+    padding:15px;
+    background: linear-gradient(90deg, rgba(61,179,168,1) 0%, rgba(220,187,61,1) 100%);
+    border:none;
+    color:white;
+}
+/* Box Dropdown */
+div.content{
+    position: relative;
+    top:230px;
+}
+div.breadcrumb{
+    display:flex;
+    height:25px;
+    width:100%;
+    position: relative;
+    border-top:1px solid #ededed;
+    border-bottom:1px solid #ededed;
+    font-size: xx-small !important;
+}
+div.breadcrumb p{
+    display: inline-block;
+}
+div.breadcrumb a{
+    color:#12afd6;
+}
+div.breadcrumb a:hover{
+    text-decoration: underline;
+}
+div.breadcrumb div{
+    width:280px;
+}
+div.breadcrumb div:nth-child(2){
+    text-align: right;
+    flex-grow: 7;
+}
+div.content div.flexbox{
+    display:flex;
+    margin-top:10px;
+    width:100%;
+}
+div.filters{
+    border:1px solid #ededed;
+    width:21%;
+    height:700px;
+    overflow:scroll;
+    color:#5a5a5a;
+    position: fixed;
+}
+div.filters h3{
+    margin-left:20px;
+}
+div.filters div.frame-type,div.filters div.frame-shape{
+    display:flex;
+    flex-flow: row wrap;
+    width:90%;
+    margin:auto;
+    justify-content: space-between;
+    text-align: center;
+}
+div.filters div.frame-type div,div.filters div.frame-shape div{
+    padding:2px;
+    width:70px;
+    height:70px;
+    border:1px solid #ededed;
+    font-size:small;
+}
+div.filters div.frame-type img,div.filters div.frame-shape img{
+    width:58px;
+    height:31px;
+}
+div.filters div.frame-type div:hover,div.filters div.frame-shape div:hover{
+    border: 1px solid #6E5A64;
+    cursor: pointer;
+}
+div.glasses{
+    width:79%;
+    left:21%;
+    position:relative;
+    background:white;
+}
+div.sectionHeading{
+    display:flex;
+    width:100%;
+    background:#EDEDED;
+    flex-flow:row nowrap;
+}
+div.sectionHeading div{
+    width:33%;
+}
+div.filters div.colors{
+    margin-left:20px;
+    height:200px;
+    overflow:scroll;
+}
+div.sectionHeading div *{
+    margin:4px;
+}
+div.filters div.menus{
+    font-size:small;
+    font-weight: bolder;
+}
+div.filters div.menus div{
+    padding:25px 5px;
+    border-bottom:1px solid #cecece;
+}
+div.filters div.menus img{
+    float:right;
+}
+div.filters div.menus div:nth-child(1){
+    border-top:1px solid #cecece;
+}
+div.filters div.menus div:hover{
+    cursor: pointer;
+}
+div.filters div.menus div:active{
+    border-top:5px solid #cecece;
+}
+p.showing{
+    width:150px;
+    margin:10px auto;
+    font-size: small;
+}
+div.results{
+    display:flex;
+    flex-flow:row wrap;
+    font-size: small;
+    padding-bottom:50px;
+    margin-bottom:20px;
+    border-bottom:1px solid #ededed;
+}
+div.results > div{
+    width:300px;
+    border:1px solid #ededed;
+    height:300px;
+    margin:15px;
+    transition: 0.2s all ease;
+    position: relative;
+}
+div.results > div:hover{
+    cursor: pointer;
+    box-shadow:0 0 8px lightgrey;
+}
+img.glass{
+    width:100%;
+    height:140px;
+}
+div.results h4{
+    text-align: left;
+}
+span.cutprice{
+    color:lightgray;
+    text-decoration: line-through;
+}
+a.tryOn{
+    padding:10px;
+    text-align:center;
+    border:1px solid #d8d8d8;
+    float:right;
+    color:#6E5A64;
+    font-weight:100;
+    height:20px;
+    position: absolute;
+    left:180px;
+    top:245px;
+    transition: all 0.2s ease;
+}
+a.tryOn img{
+    float:right;
+    position: relative;
+    top:-20px;
+    left:10px;
+    width:50px;
+    height:50px;
+}
+div.details{
+    margin:50px 10px 10px;
+    transition: all 0.4s ease;
+}
+div.results > div:hover div.details{
+    margin-top:30px;
+}
+div.results > div:hover div.details a{
+    top:210px;
+}
+footer > div{
+    margin:20px auto;
+    text-align:center;
+}
+div.sns img{
+    margin-left:20px;
+}
+footer div:nth-child(3) a{
+    color:#12afd6;
+}
+footer a{
+    color:#6E5A64;
+}
+footer div.navbar{
+    text-align:left;
+    border-top:2px solid #b6b6b6;
+    border-bottom:2px solid #b6b6b6;
+    padding:20px;
+}
+footer div.navbar a{
+    margin:auto 1.4vw;
+}
+footer div.links a{
+    margin:auto 1vw;
+}
+
+footer div.morelinks{
+    text-align:left;
+    margin-left:50px;
+}
+footer div.morelinks a::before{
+    content:'| ';
+}
+footer div.morelinks a::after{
+    content:' ';
+}
+footer div.morelinks{
+    font-size:x-small;
+}
+img.scrollUp{
+    position: fixed;
+    top:88%;
+    left:95%;
+}
+img.scrollUp:hover{
+    cursor: pointer;
+}
